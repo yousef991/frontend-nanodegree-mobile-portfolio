@@ -1,9 +1,8 @@
 ## Website Performance Optimization portfolio project
-below it's what I did with this project.
+I've optimized a provided website with a number of optimization- and performance-related issues so that it achieves a target PageSpeed score and runs at 60 frames per second.
+And below it's what I did with this project.
 
 #### Part 1: Optimize PageSpeed Insights score for index.html
-
-Some useful tips to help you get started:
 
 1- go to https://www.python.org/downloads/ and download python and install it
 2-go to https://ngrok.com/download and place the downloaded file in your project folder
@@ -16,7 +15,7 @@ Some useful tips to help you get started:
 
 #### Part 2: Optimize Frames per Second in pizza.html
 - move "queryselector" out if loop
-- write " requestAnimationFrame" method tells the browser that you wish to perform an animation and requests that the browser call a specified function to update an animation before the next repaint. The method takes a callback as an argument to be invoked before the repaint.
+- write " requestAnimationFrame" method to tell the browser that you wish to perform an animation and requests that the browser call a specified function to update an animation before the next repaint. The method takes a callback as an argument to be invoked before the repaint.
 
 
 ### Optimization Tips and Tricks
@@ -25,5 +24,12 @@ Some useful tips to help you get started:
 * [Optimizing JavaScript](https://closure-compiler.appspot.com/home "javascript")
 * [Google Font API](https://css-tricks.com/snippets/css/basics-of-google-font-api/ "")
 * <a href="https://tinypng.com/">Optimize images</a>
+
+### Resources
+- <a href="https://discussions.udacity.com/">Udacity Discussion Forum </a>
+- <a href="https://stackoverflow.com/">stackoverflow </a>
+- <a href="https://discussions.udacity.com/">1:1 session with a mentor</a>
+
+
 
 
