@@ -2,8 +2,8 @@
 I've optimized a provided website with a number of optimization- and performance-related issues so that it achieves a target PageSpeed score and runs at 60 frames per second.
 And below it's what I did with this project.
 
-#### Part 1: Optimize PageSpeed Insights score for index.html
-
+####  Optimization of Mobile Portfolio Page (index.html) by PageSpeed Insights:
+* follow the steps explained below to use Ngrok to Test a Local Site on PageSpeed Insights :
 1- go to https://www.python.org/downloads/ and download python and install it
 2-go to https://ngrok.com/download and place the downloaded file in your project folder
 3-open gitbash or the command line and navigate to the project folder directory 
@@ -12,10 +12,28 @@ And below it's what I did with this project.
 6-open the ngrok file after placing it in the project directory and type in the following: if you are using mac then cd to project file and type ./ngrok http 8080
 7- It will then give you a live link that you can use and paste in pagespeed insights to checkout how your optimization is working
 
+after that i've optimized all images and index.html 
 
-#### Part 2: Optimize Frames per Second in pizza.html
-- move "queryselector" out if loop
-- write " requestAnimationFrame" method to tell the browser that you wish to perform an animation and requests that the browser call a specified function to update an animation before the next repaint. The method takes a callback as an argument to be invoked before the repaint.
+
+#### Optimization of Cam's Pizzeria: pizza.html
+-  I was looking for possible optimizations of JavaScript, Layout and Paint
+execution (The Critical Rendering Path: HTML -> CSSOM <- JavaScript -> Render Tree
+-> Layout -> Paint).
+- write "requestAnimationFrame" method to tell the browser that you wish to perform an animation and requests that the browser call a specified function to update an animation before the next repaint. The method takes a callback as an argument to be invoked before the repaint.
+
+
+
+## Measured Results
+
+1. Mobile Portfolio Page (index.html):
+* 91% Speed on Mobile
+* 93% Speed on Desktop
+
+2. Cam's Pizzeria (views/pizza.html, views/js/main.js):
+* scrolling is under 60 frames per second
+* the time to resize a pizza is less than 5ms
+
+=> https://developers.google.com/speed/pagespeed/insights/
 
 
 ### Optimization Tips and Tricks
