@@ -452,11 +452,11 @@ var resizePizzas = function(size) {
   // Accesses the DOM outside the For Loop
 
   function changePizzaSizes(size) {
-      var randomPizzas = document.getElementsByClassName(".randomPizzaContainer");
+      var randomPizzas = document.getElementsByClassName("randomPizzaContainer");
       var newwidth = (document.querySelectorAll(".randomPizzaContainer")[0].offsetWidth + randomPizzas) + 'px';
       var length = randomPizzas.length;
     for (var i = 0; i < length; i++) {
-      randomPizzas[i].style.width = newWidth + "%";
+      randomPizzas[i].style.width = newwidth + "%";
     }
   }
 
