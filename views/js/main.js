@@ -293,14 +293,14 @@ function generator(adj, noun) {
   var randomNoun = parseInt(Math.random() * nouns.length);
   var name = "The " + adjectives[randomAdjective].capitalize() + " " + nouns[randomNoun].capitalize();
   return name;
-};
+}
 
 // Chooses random adjective and random noun
 function randomName() {
   var randomNumberAdj = parseInt(Math.random() * adjectives.length);
   var randomNumberNoun = parseInt(Math.random() * nouns.length);
   return generator(adjectives[randomNumberAdj], nouns[randomNumberNoun]);
-};
+}
 
 // These functions return a string of a random ingredient from each respective category of ingredients.
 var selectRandomMeat = function() {
@@ -454,7 +454,7 @@ var resizePizzas = function(size) {
   function changePizzaSizes(size) {
       var randomPizzas = document.getElementsByClassName(".randomPizzaContainer");
       var newwidth = (document.querySelectorAll(".randomPizzaContainer")[0].offsetWidth + randomPizzas) + 'px';
-      length = randomPizzas.length;
+      var length = randomPizzas.length;
     for (var i = 0; i < length; i++) {
       randomPizzas[i].style.width = newWidth + "%";
     }
@@ -548,6 +548,3 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   updatePositions();
 });
-
-
-
